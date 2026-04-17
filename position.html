@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+
+    <!-- 3. Relative + Absolute -->
+    <div class="bg-gray-300 size-40 relative">
+        <div class="bg-red-500 size-10 absolute top-0 left-0"></div>
+    </div>
+
+    <hr>
+
+    <!-- 4. All corners -->
+    <div class="bg-gray-300 size-40 relative">
+        <div class="bg-red-500 size-10 absolute top-0 left-0"></div>
+        <div class="bg-blue-500 size-10 absolute top-0 right-0"></div>
+        <div class="bg-green-500 size-10 absolute bottom-0 left-0"></div>
+        <div class="bg-yellow-500 size-10 absolute bottom-0 right-0"></div>
+    </div>
+
+    <hr>
+
+    <!-- 5. Center -->
+    <div class="bg-gray-300 size-40 relative">
+        <div class="bg-purple-500 size-12 absolute top-1/2 left-1/2 
+                    -translate-x-1/2 -translate-y-1/2"></div>
+    </div>
+
+    <hr>
+
+    <!-- 6. Offset -->
+    <div class="bg-gray-300 size-40 relative">
+        <div class="bg-pink-500 size-12 absolute top-5 left-5"></div>
+    </div>
+
+    <hr>
+
+    <!-- 7. Z-index -->
+    <div class="bg-gray-300 size-40 relative">
+        <div class="bg-red-400 size-20 absolute top-5 left-5 z-10"></div>
+        <div class="bg-blue-400 size-20 absolute top-10 left-10 z-20"></div>
+    </div>
+
+    <hr>
+
+    <!-- 8. Fixed -->
+    <div class="bg-gray-200 h-[200px]">
+        <div class="bg-black size-12 fixed bottom-5 right-5"></div>
+    </div>
+
+    <hr>
+
+    <!-- 9. Custom position -->
+    <div class="bg-gray-300 size-40 relative">
+        <div class="bg-orange-500 size-10 absolute top-[30px] left-[80px]"></div>
+    </div>
+</body>
+</html>

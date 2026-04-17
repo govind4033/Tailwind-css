@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background classes</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <!-- background image :- bg-cover , bg-contain , bg-no-repeat -->
+    <div 
+        class="bg-yellow-300 h-100 bg-[url('assets/laundary.png')] bg-no-repeat bg-center bg-contain"
+    >
+    first</div>
+
+    <!-- Gradient direction r, l, t, b, tr, tl, br, bl -->
+    <div 
+        class="bg-gradient-to-r from-yellow-300 to-pink-300 size-100 "
+    >
+    second</div>
+    
+    <!-- shadow :- shadow-md, shadow-lg, etc. -->
+    <div 
+        class="shadow shadow-red-500 shadow-2xl size-100 m-8"
+    >
+    second</div>
+
+    <div 
+        class="shadow-inner shadow-green-500 size-100 m-8"
+    >
+    second</div>
+</body>
+</html>

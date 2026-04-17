@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="bg-red-200 size-20">Normal div</div>
+
+    <hr>
+
+    <div class="bg-blue-200 size-20">div with explicit size</div>
+    <div class="bg-blue-400 size-40">div with explicit size</div>
+    <div class="bg-blue-600 size-60">div with explicit size</div>
+
+    <hr>
+
+    <!-- min-size doesn't exist directly, so we use both -->
+    <div class="bg-green-200 min-w-20 min-h-20">div with minimum size</div>
+    <div class="bg-green-400 min-w-40 min-h-40">div with minimum size</div>
+    <div class="bg-green-600 min-w-60 min-h-60">div with minimum size</div>
+
+    <hr>
+
+    <div class="bg-yellow-200 min-w-40 min-h-40 size-20">minimum size vs normal</div>
+    <div class="bg-yellow-400 min-w-60 min-h-60 size-40">minimum size vs normal</div>
+
+    <hr>
+
+    <div class="bg-blue-200 size-full">normal size full</div>
+    <div class="bg-blue-400 min-w-full min-h-full">minimum size full</div>
+    <div class="bg-blue-200 max-w-full max-h-full">maximum size full</div>
+
+    <hr>
+
+    <div class="bg-purple-200 size-1/2">50% ratio size</div>
+    <div class="bg-purple-400 size-1/4">1/4 ratio size</div>
+
+    <div class="bg-red-200 size-20">Normal div</div>
+
+    <hr>
+
+    <div class="bg-blue-200 size-fit">size-fit (content based)</div>
+    <div class="bg-blue-400 size-auto">size-auto</div>
+
+    <hr>
+
+    <div class="bg-green-200 size-20 hover:size-40">
+    hover to grow
+    </div>
+
+    <div class="bg-green-400 size-40 hover:size-20">
+    hover to shrink
+    </div>
+
+    <hr>
+
+    <div class="bg-yellow-200 size-[50px]">50px</div>
+    <div class="bg-yellow-400 size-[100px]">100px</div>
+    <div class="bg-yellow-600 size-[150px]">150px</div>
+
+    <hr>
+
+    <div class="bg-purple-200 size-[80px] hover:size-[120px] transition-all duration-300">
+    smooth hover grow
+    </div>
+
+    <hr>
+
+    <div class="bg-blue-200 size-fit border p-2">
+    Fit content size
+    </div>
+
+    <div class="bg-blue-400 size-[200px] flex items-center justify-center">
+    Fixed square
+    </div>
+</body>
+</html>

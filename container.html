@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Container</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="space-y-6">
+
+    <!-- full width -->
+    <div class="bg-red-200 p-4">
+        full width div
+    </div>
+
+    <!-- container only -->
+    <div class="container bg-blue-200 p-4">
+        container (not centered)
+    </div>
+
+    <!-- container centered -->
+    <div class="container mx-auto bg-green-200 p-4">
+        centered container
+    </div>
+
+    <!-- container + padding -->
+    <div class="container mx-auto px-6 bg-yellow-200 p-4">
+        container with padding
+    </div>
+
+    <!-- container + box inside -->
+    <div class="container mx-auto bg-purple-200 p-6">
+        <div class="bg-purple-500 text-white size-20">
+        box inside container
+        </div>
+    </div>
+
+    </div>
+</body>
+</html>

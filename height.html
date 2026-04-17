@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="bg-red-200 h-20">Normal div</div>
+
+    <hr>
+
+    <div class="bg-blue-200 h-20">div with explicit height</div>
+    <div class="bg-blue-400 h-40">div with explicit height</div>
+    <div class="bg-blue-600 h-60">div with explicit height</div>
+
+    <hr>
+
+    <div class="bg-green-200 min-h-20">div with minimum height</div>
+    <div class="bg-green-400 min-h-40">div with minimum height</div>
+    <div class="bg-green-600 min-h-60">div with minimum height</div>
+
+    <hr>
+
+    <div class="bg-yellow-200 min-h-40 h-20">minimum height vs normal</div>
+    <div class="bg-yellow-400 min-h-60 h-40">minimum height vs normal</div>
+    <div class="bg-yellow-200 min-h-60">div with minimum height</div>
+
+    <hr>
+
+    <div class="bg-red-200 max-h-40 h-20">maximum height vs normal</div>
+    <div class="bg-red-400 max-h-40 h-60">maximum height vs normal</div>
+    <div class="bg-red-200 max-h-60">div with maximum height</div>
+
+    <hr>
+
+    <div class="bg-blue-200 h-full">normal height full</div>
+    <div class="bg-blue-400 min-h-full">minimum height full</div>
+    <div class="bg-blue-200 max-h-full">maximum height full</div>
+
+    <hr>
+
+    <div class="bg-purple-200 h-1/2">50% ratio height</div>
+    <div class="bg-purple-400 h-1/4">1/4 ratio height</div>
+
+    <hr>
+
+    <div class="bg-purple-200 h-24">small height</div>
+    <div class="bg-purple-400 h-32">medium height</div>
+    <div class="bg-purple-200 h-40">large height</div>
+
+    <hr>
+
+    <div class="bg-purple-200 h-64">extra large</div>
+    <div class="bg-purple-400 h-80">2 extra large</div>
+    <div class="bg-purple-200 h-96">3 extra large</div>
+
+    <hr>
+
+    <div class="bg-purple-200 h-[80px]"> height given by []</div>
+    <div class="bg-purple-400 h-[40px] hover:h-[80px]"> height given by [] and hover effect</div>
+    <div class="bg-purple-200 h-[20px] hover:h-[40px]"> height given by [] and hover effect</div>
+</body>
+</html>
