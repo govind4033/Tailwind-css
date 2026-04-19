@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactivity</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="p-10 space-y-6">
+
+    <!-- Cursor -->
+    <div class="bg-red-200 p-4 cursor-pointer">cursor-pointer</div>
+    <div class="bg-blue-200 p-4 cursor-not-allowed">cursor-not-allowed</div>
+    <div class="bg-green-200 p-4 cursor-wait">cursor-wait</div>
+
+    <hr>
+
+    <!-- Pointer Events -->
+    <div class="bg-yellow-200 p-4 pointer-events-none">
+        pointer-events-none (not clickable)
+    </div>
+    <div class="bg-yellow-400 p-4 pointer-events-auto">
+        pointer-events-auto (clickable)
+    </div>
+
+    <hr>
+
+    <!-- Resize -->
+    <textarea class="border resize p-2">resize</textarea>
+    <textarea class="border resize-none p-2">resize-none</textarea>
+    <textarea class="border resize-x p-2">resize-x</textarea>
+    <textarea class="border resize-y p-2">resize-y</textarea>
+
+    <hr>
+
+    <!-- User Select -->
+    <div class="bg-purple-200 p-4 select-none">
+        select-none (cannot select text)
+    </div>
+    <div class="bg-purple-400 p-4 select-text">
+        select-text (can select text)
+    </div>
+    <div class="bg-purple-600 p-4 select-all">
+        select-all (selects everything on click)
+    </div>
+
+    <hr>
+
+    <!-- Scroll Behavior -->
+    <div class="h-32 overflow-y-scroll scroll-smooth border">
+        <p>scroll-smooth</p>
+        <p>More content...</p>
+        <p>More content...</p>
+        <p>More content...</p>
+        <p>More content...</p>
+    </div>
+
+    <hr>
+
+    <!-- Appearance -->
+    <select class="appearance-none border p-2">
+        <option>Custom dropdown</option>
+    </select>
+
+    <hr>
+
+    <!-- Accent Color -->
+    <input type="checkbox" class="accent-red-500">
+    <input type="checkbox" class="accent-blue-500">
+
+    <hr>
+
+    <!-- Caret Color -->
+    <input type="text" placeholder="Type here..." class="border p-2 caret-red-500">
+
+    <hr>
+
+    <!-- Hover & Active Interaction -->
+    <button class="bg-blue-400 p-3 hover:bg-blue-600 active:bg-green-400 focus:bg-yellow-500 text-white">
+        Hover & Click me
+    </button>
+
+    <hr>
+
+    <!-- Disabled State -->
+    <button class="bg-gray-400 p-3 cursor-not-allowed opacity-50">
+        Disabled Button
+    </button>
+
+
+    <div class="h-32 group">
+        <p class="group-hover:bg-blue-600">scroll-smooth</p>
+        <p class="group-hover:bg-red-600">More content...</p>
+        <p class="group-hover:bg-yellow-600">More content...</p>
+        <p class="group-hover:bg-green-600">More content...</p>
+        <p class="group-hover:bg-purple-600">More content...</p>
+    </div>
+
+</body>
+</html>

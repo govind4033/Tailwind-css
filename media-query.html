@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Query</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="p-10 space-y-6">
+
+  <!-- Background change -->
+  <div class="bg-red-200 sm:bg-blue-200 md:bg-green-200 lg:bg-yellow-200 xl:bg-purple-200 p-4">
+    Resize screen to see color change
+  </div>
+
+  <hr>
+
+  <!-- Width change -->
+  <div class="bg-blue-400 w-20 sm:w-40 md:w-60 lg:w-80 xl:w-96 h-10"></div>
+
+  <hr>
+
+  <!-- Text size -->
+  <p class="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">
+    Responsive text
+  </p>
+
+  <hr>
+
+  <!-- Flex layout -->
+  <div class="flex flex-col md:flex-row gap-4">
+    <div class="bg-red-300 p-4">Box 1</div>
+    <div class="bg-blue-300 p-4">Box 2</div>
+  </div>
+
+  <hr>
+
+  <!-- Hide / Show -->
+  <div class="bg-green-200 p-4 hidden md:block">
+    Hidden on small, visible on md+
+  </div>
+
+  <div class="bg-yellow-200 p-4 md:hidden">
+    Visible on small, hidden on md+
+  </div>
+
+  <hr>
+
+  <!-- Grid responsive -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+    <div class="bg-purple-200 p-4">1</div>
+    <div class="bg-purple-300 p-4">2</div>
+    <div class="bg-purple-400 p-4">3</div>
+  </div>
+
+</body>
+</html>

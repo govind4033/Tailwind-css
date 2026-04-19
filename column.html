@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Columns</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="p-10 space-y-10">
+
+  <!-- 1 column -->
+  <div class="columns-1 bg-red-200 p-4">
+    <p>Column 1 content flowing...</p>
+    <p>More content...</p>
+    <p>More content...</p>
+  </div>
+
+  <hr>
+
+  <!-- 2 columns -->
+  <div class="columns-2 bg-blue-200 p-4">
+    <p>Content flowing into 2 columns...</p>
+    <p>More content...</p>
+    <p>More content...</p>
+    <p>More content...</p>
+  </div>
+
+  <hr>
+
+  <!-- 3 columns -->
+  <div class="columns-3 bg-green-200 p-4">
+    <p>Content flowing into 3 columns...</p>
+    <p>More content...</p>
+    <p>More content...</p>
+    <p>More content...</p>
+    <p>More content...</p>
+  </div>
+
+  <hr>
+
+  <!-- Auto column width -->
+  <div class="columns-md bg-yellow-200 p-4">
+    <p>Auto columns based on width...</p>
+    <p>More content...</p>
+    <p>More content...</p>
+    <p>More content...</p>
+  </div>
+
+  <hr>
+
+  <!-- Custom column width -->
+  <div class="columns-[150px] bg-purple-200 p-4">
+    <p>Each column ~150px...</p>
+    <p>More content...</p>
+    <p>More content...</p>
+    <p>More content...</p>
+    <p>More content...</p>
+  </div>
+
+  <hr>
+
+  <!-- Column gap -->
+  <div class="columns-3 gap-8 bg-pink-200 p-4">
+    <p>Column gap example...</p>
+    <p>More content...</p>
+    <p>More content...</p>
+    <p>More content...</p>
+  </div>
+
+  <hr>
+
+  <!-- Column rule (line between columns) -->
+  <div class="columns-3 gap-8 divide-x divide-gray-500 bg-gray-200 p-4">
+    <p>With divider between columns...</p>
+    <p>More content...</p>
+    <p>More content...</p>
+    <p>More content...</p>
+  </div>
+
+  <hr>
+
+  <!-- Responsive columns -->
+  <div class="columns-1 sm:columns-2 md:columns-3 lg:columns-4 bg-blue-300 p-4">
+    <p>Responsive columns...</p>
+    <p>More content...</p>
+    <p>More content...</p>
+    <p>More content...</p>
+    <p>More content...</p>
+  </div>
+
+  <!-- Responsive columns -->
+  <div class="columns-3xs bg-blue-300 p-4">
+    <p>Responsive columns...</p>
+    <p>More content...</p>
+    <p>More content...</p>
+    <p>More content...</p>
+    <p>More content...</p>
+  </div>
+
+</body>
+</html>
