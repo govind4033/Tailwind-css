@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animation Practice</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="p-10 space-y-10">
+
+  <!-- 1. Basic Animate -->
+  <div class="bg-red-300 size-16 animate-bounce"></div>
+
+  <hr>
+
+  <!-- 2. Spin -->
+  <div class="bg-blue-300 size-16 animate-spin"></div>
+
+  <hr>
+
+  <!-- 3. Ping -->
+  <div class="relative">
+    <div class="bg-green-400 size-16 rounded-full animate-ping absolute"></div>
+    <div class="bg-green-600 size-16 rounded-full"></div>
+  </div>
+
+  <hr>
+
+  <!-- 4. Pulse -->
+  <div class="bg-purple-400 size-16 animate-pulse"></div>
+
+  <hr>
+
+  <!-- 5. Slow Animation -->
+  <div class="bg-yellow-400 size-16 animate-bounce duration-1000"></div>
+
+  <hr>
+
+  <!-- 6. Delay -->
+  <div class="bg-pink-400 size-16 animate-bounce delay-500"></div>
+
+  <hr>
+
+  <!-- 7. Infinite Loop -->
+  <div class="bg-indigo-400 size-16 animate-spin"></div>
+
+  <hr>
+
+  <!-- 8. Hover Animation -->
+  <div class="bg-blue-500 size-16 hover:animate-bounce"></div>
+
+  <hr>
+
+  <!-- 9. Combined -->
+  <div class="bg-red-500 size-16 animate-pulse hover:animate-spin"></div>
+
+  <hr>
+
+  <!-- 10. Custom Animation -->
+  <div class="bg-black size-16 animate-[spin_3s_linear_infinite]"></div>
+
+</body>
+</html>

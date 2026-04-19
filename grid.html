@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Practice</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="p-10 space-y-10">
+
+  <!-- 1. Basic Grid -->
+  <div class="grid grid-cols-3 gap-2 bg-gray-200 p-4">
+    <div class="bg-red-300 p-4">1</div>
+    <div class="bg-blue-300 p-4">2</div>
+    <div class="bg-green-300 p-4">3</div>
+  </div>
+
+  <hr>
+
+  <!-- 2. Different Columns -->
+  <div class="grid grid-cols-4 gap-2 bg-yellow-200 p-4">
+    <div class="bg-red-300 p-4">1</div>
+    <div class="bg-blue-300 p-4">2</div>
+    <div class="bg-green-300 p-4">3</div>
+    <div class="bg-purple-300 p-4">4</div>
+  </div>
+
+  <hr>
+
+  <!-- 3. Rows -->
+  <div class="grid grid-rows-2 grid-cols-3 gap-2 bg-blue-200 p-4">
+    <div class="bg-red-300 p-4">1</div>
+    <div class="bg-blue-300 p-4">2</div>
+    <div class="bg-green-300 p-4">3</div>
+    <div class="bg-yellow-300 p-4">4</div>
+    <div class="bg-purple-300 p-4">5</div>
+    <div class="bg-pink-300 p-4">6</div>
+  </div>
+
+  <hr>
+
+  <!-- 4. Column Span -->
+  <div class="grid grid-cols-3 gap-2 bg-green-200 p-4">
+    <div class="bg-red-300 p-4 col-span-2">col-span-2</div>
+    <div class="bg-blue-300 p-4">3</div>
+  </div>
+
+  <hr>
+
+  <!-- 5. Row Span -->
+  <div class="grid grid-cols-3 grid-rows-2 gap-2 bg-purple-200 p-4 h-40">
+    <div class="bg-red-300 p-4 row-span-2">row-span-2</div>
+    <div class="bg-blue-300 p-4">2</div>
+    <div class="bg-green-300 p-4">3</div>
+    <div class="bg-yellow-300 p-4">4</div>
+  </div>
+
+  <hr>
+
+  <!-- 6. Auto Flow -->
+  <div class="grid grid-cols-3 grid-flow-row gap-2 bg-pink-200 p-4">
+    <div class="bg-red-300 p-4">1</div>
+    <div class="bg-blue-300 p-4">2</div>
+    <div class="bg-green-300 p-4">3</div>
+    <div class="bg-yellow-300 p-4">4</div>
+  </div>
+
+  <hr>
+
+  <!-- 7. Justify Items -->
+  <div class="grid grid-cols-3 h-40 gap-2 bg-gray-300 p-4 justify-items-center">
+    <div class="bg-red-300 p-2">1</div>
+    <div class="bg-blue-300 p-2">2</div>
+    <div class="bg-green-300 p-2">3</div>
+  </div>
+
+  <hr>
+
+  <!-- 8. Align Items -->
+  <div class="grid grid-cols-3 h-40 gap-2 bg-blue-300 p-4 items-center">
+    <div class="bg-red-300 p-2">1</div>
+    <div class="bg-blue-300 p-6">2</div>
+    <div class="bg-green-300 p-2">3</div>
+  </div>
+
+  <hr>
+
+  <!-- 9. Place Items -->
+  <div class="grid grid-cols-3 h-40 gap-2 bg-yellow-300 p-4 place-items-center">
+    <div class="bg-red-300 p-2">1</div>
+    <div class="bg-blue-300 p-2">2</div>
+    <div class="bg-green-300 p-2">3</div>
+  </div>
+
+  <hr>
+
+  <!-- 10. Custom Columns -->
+  <div class="grid grid-cols-[200px_1fr_100px] gap-2 bg-green-300 p-4">
+    <div class="bg-red-300 p-2">200px</div>
+    <div class="bg-blue-300 p-2">flex</div>
+    <div class="bg-yellow-300 p-2">100px</div>
+  </div>
+
+  <hr>
+
+  <!-- 11. Responsive Grid -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 bg-purple-300 p-4">
+    <div class="bg-red-300 p-4">1</div>
+    <div class="bg-blue-300 p-4">2</div>
+    <div class="bg-green-300 p-4">3</div>
+    <div class="bg-yellow-300 p-4">4</div>
+  </div>
+
+  <hr>
+
+  <!-- 12. Auto-fit / Auto-fill -->
+  <div class="grid grid-cols-[repeat(auto-fit,minmax(100px,1fr))] gap-2 bg-gray-200 p-4">
+    <div class="bg-red-300 p-4">1</div>
+    <div class="bg-blue-300 p-4">2</div>
+    <div class="bg-green-300 p-4">3</div>
+    <div class="bg-yellow-300 p-4">4</div>
+  </div>
+
+</body>
+</html>
